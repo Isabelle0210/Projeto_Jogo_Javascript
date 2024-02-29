@@ -9,12 +9,24 @@
 </head>
 <body onresize="ajustaTamanhoPalcoJogo()"> <!--O evento onresize ocorre quando a janela do navegador é redimensionada.-->
 
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png" alt="">
+            <img id="v2" src="imagens/coracao_cheio.png" alt="">
+            <img id="v3" src="imagens/coracao_cheio.png" alt="">
+
+        </div>
+
+        <div class="cronometro">
+            Tempo restanta: ?
+        </div>
+    </div>
     <script>
         posicaoRandomica()
         //permite que você execute um bloco de código repetidamente com um intervalo de tempo específico entre cada execução
         setInterval(function(){
             posicaoRandomica()
-        }, 1000)
+        }, 2000)
     </script>
 </body>
 </html>
