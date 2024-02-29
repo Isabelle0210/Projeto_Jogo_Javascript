@@ -14,7 +14,7 @@ function posicaoRandomica(){// foi necessario colocar dentro da função para qu
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito'). remove()
         if(vidas>3){
-            alert('interrompa')
+            window.location.href = "fim_de_jogo.html"
         }else{
             document.getElementById('v'+ vidas).src ="imagens/coracao_vazio.png"
             vidas ++
