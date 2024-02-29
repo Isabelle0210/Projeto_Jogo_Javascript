@@ -18,15 +18,16 @@
         </div>
 
         <div class="cronometro">
-            Tempo restanta: ?
+            Tempo restanta: <span id="cronometro"></span>
         </div>
     </div>
     <script>
+        document.getElementById('cronometro').innerHTML = tempo 
         posicaoRandomica()
         //permite que você execute um bloco de código repetidamente com um intervalo de tempo específico entre cada execução
-        setInterval(function(){
+        var criaMosca = setInterval(function(){
             posicaoRandomica()
-        }, 2000)
+        }, criaMosquitoTempo)
     </script>
 </body>
 </html>
