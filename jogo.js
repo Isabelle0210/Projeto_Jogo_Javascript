@@ -10,6 +10,11 @@ function ajustaTamanhoPalcoJogo(){
 ajustaTamanhoPalcoJogo()//aqui estou chamando a função
 
 function posicaoRandomica(){// foi necessario colocar dentro da função para que ela seja representada a hora que o body for carregado 
+    //removendo mosquito anterior caso exista
+    if(document.getElementById('mosquito')){
+        document.getElementById('mosquito'). remove()
+    }
+    
     var posicaoX= Math.floor(Math.random() * largura)- 90
     var posicaoY= Math.floor(Math.random() * altura)- 90 
 //math.random gera valores aleatorios que vao de 0 a 1 
@@ -28,6 +33,8 @@ function posicaoRandomica(){// foi necessario colocar dentro da função para qu
     mosquito.style.top = posicaoY+'px'
     //para que isso aconteca deve colocar a posição como absoluta
     mosquito.style.position = 'absolute'
+    mosquito.id = 'mosquito'
+
     document.body.appendChild(mosquito)
 }
 function tamanhoAleatorio(){
